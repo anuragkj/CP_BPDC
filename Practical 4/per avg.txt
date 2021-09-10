@@ -1,0 +1,31 @@
+
+  /* C program to enter marks of five subjects and find percentage and grade */
+ 
+
+#include <stdio.h>
+
+int main()
+{
+    int phy, chem, bio, math, comp;
+    float sum; 
+    float avg;
+    float per; 
+
+     /* Input marks of five subjects from user */
+
+    printf("Enter five subjects marks:" );
+
+    scanf("%d%d%d%d%d", &phy, &chem, &bio, &math, &comp);
+
+
+     /* Calculate percentage  */
+
+     sum= (phy + chem + bio + math + comp);
+    
+    avg = sum / 5.0;
+    per= (sum/500)*100;
+
+    printf("Average = %.2f", avg);
+    printf("\n Percentage = %.2f %", per);
+ return 0;
+}

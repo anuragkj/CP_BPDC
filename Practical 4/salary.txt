@@ -1,0 +1,28 @@
+
+  /* C program to Write a C program to calculate the total salary and display.*/
+ 
+
+#include <stdio.h>
+
+int main()
+{
+int salary, basic, allow; 
+float HRA;
+
+     /* Input basic & allow */
+
+    printf("Enter basic and allow" );
+
+    scanf("%d%d", &basic, &allow);
+
+
+     /* Calculate HRA  */
+
+     HRA= (basic*40)/100;
+    
+     salary=basic+HRA+allow;
+
+    printf("salary = %d", salary);
+  
+ return 0;
+}

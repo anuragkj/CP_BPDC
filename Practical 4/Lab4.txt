@@ -1,0 +1,129 @@
+C Programming
+1972 D. Ritchie in Bell Lab for developement in Linux
+# include<stdio.h>    header file
+void main()     main func
+{       starting of func
+int x,y;      x and y are int variable; declaration of variable;
+x=10;         initialization
+
+}       closing of func
+
+place holders:
+int - % d
+double - % lf
+float - % f
+char - % c
+
+Program 1: Sum of two numbers
+void main()
+{
+    int x,y;
+    printf("Enter the first number: ");
+    scanf("%d",&x);
+    printf("Enter the second number: ");
+    scanf("%d",&y);
+    printf("Sum of numbers is: %d",x+y);
+    
+} 
+
+& is address of variable
+& -> provide a memory location to store the value of the variable
+
+
+void main()
+{
+    int m1,m2,m3,m4,m5;
+    float sum,average,percentage;
+    printf("Enter the marks for first subject(within 100): ");
+    scanf("%d",&m1);
+    printf("Enter the marks for second subject(within 100): ");
+    scanf("%d",&m2);
+    printf("Enter the marks for third subject(within 100): ");
+    scanf("%d",&m3);
+    printf("Enter the marks for fourth subject(within 100): ");
+    scanf("%d",&m4);
+    printf("Enter the marks for fifth subject(within 100): ");
+    scanf("%d",&m5);
+    sum=m1+m2+m3+m4+m5;
+    average=sum/5;
+    percentage=(sum/500)*100;
+    printf("The sum is: %f",sum);
+    printf("\nThe average is: %f",average);
+    printf("\nThe percentage is: %f",percentage);
+}
+
+
+#include <stdio.h>
+#define pi 3.14
+
+int main()
+{
+    float r,p,a;
+    printf("Enter the radius: ");
+    scanf("%f",&r);
+    p=2*pi*r;
+    a=pi*(r*r);
+    printf("Enter the radius: ");
+    printf("Perimeter is: %f",p);
+    printf("\nArea is : %f",a);
+}
+
+#include <stdio.h>
+
+void main()
+{
+int salary, basic, allow; 
+float HRA;
+printf("Enter basic: " );
+scanf("%d", &basic);
+printf("Enter allowance: " );
+scanf("%d", &allow);
+HRA= (basic*40)/100;
+salary=basic+HRA+allow;
+printf("Salary = %d", salary);     
+}
+
+
+#include <stdio.h>
+void main()
+{
+int num,sum=0;
+printf("Enter the number: ");
+scanf("%d",&num);
+while(num!=0)
+{
+    sum+=num%10;
+    num/=10;
+}
+printf("The sum of digits of the number is: %d",sum);
+}
+
+#include <stdio.h>
+void main()
+{
+int num,sum=0,rem;
+printf("Enter the number: ");
+scanf("%d",&num);
+rem=num%10;
+sum+=rem;
+num/=10;
+rem=num%10;
+sum+=rem;
+num/=10;
+rem=num%10;
+sum+=rem;
+num/=10;
+rem=num%10;
+sum+=rem;
+num/=10;
+printf("The sum of digits of the number is: %d",sum);
+}
+    
+
+
+
+
+
+
+
+
